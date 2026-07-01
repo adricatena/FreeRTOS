@@ -33,6 +33,7 @@ void toggleLED(void *parameter)
         vTaskDelay(500/portTICK_PERIOD_MS);
          gpio_set_level(GPIO_LED, 1);
         vTaskDelay(500/portTICK_PERIOD_MS);
+        printf("LED parpadeando en GPIO %d\n", GPIO_LED);
     }
 }
 
